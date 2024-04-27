@@ -1,0 +1,56 @@
+{
+    "name": "ievtds/laravel-apexcharts",
+    "description": "ApexCharts package for Laravel",
+    "keywords": [
+        "laravel",
+        "line",
+        "bar",
+        "pie",
+        "donut",
+        "charts",
+        "apexcharts"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cüneyt Şentürk",
+            "email": "info@ievtds.com",
+            "homepage": "https://ievtds.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "balping/json-raw-encoder": "^1.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^9.5|^10.0|^11.0",
+        "orchestra/testbench": "^7.4|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ievtds\\Apexcharts\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ievtds\\Apexcharts\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ievtds\\Apexcharts\\Provider"
+            ],
+            "aliases": {
+                "Apexcharts": "ievtds\\Apexcharts\\Facade"
+            }
+        }
+    }
+}
